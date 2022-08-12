@@ -2391,7 +2391,7 @@ blockquote span {
 .hero-area {
   position: relative;
   padding: 220px 0 250px 0;
-  background-image: url("../images/hero/hero-bg.jpg");
+  background-image: url("../images/hero/5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2411,7 +2411,7 @@ blockquote span {
 
 .hero-area.overlay::before {
   background: #0CB36E;
-  opacity: 0.9;
+  opacity: 0.45;
 }
 
 .hero-area .hero-content {
