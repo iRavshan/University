@@ -115,54 +115,34 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="register mt-5 mb-5">
-                    <h4>Shaxsiy ma'lumotlarni kiriting</h4>
-                    <form action="" method="post">
-                        <div class="col-lg-12 col-12">
-                            <div class="form-group">
-                                <input name="name" type="text" placeholder="Ismingiz" required="required">
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-12">
-                            <div class="form-group">
-                                <input id="phone" type="text" placeholder="Telefon raqamingiz" required="required">
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-12">
-                            <div class="form-group">
-                                <select required class="form-select">
-                                    <option value="" selected disabled>Ta'lim yo'nalishini tanlang</option>
-                                    <option value="0">aaaa</option>
-                                    <option value="1">bbbb</option>
-                                 </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-12">
-                            <div class="form-group">
-                                <select required class="form-select">
-                                    <option value="" selected disabled>Ta'lim turini tanlang</option>
-                                    <option value="0">Kunduzgi</option>
-                                    <option value="1">Sirtqi</option>
-                                 </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-12">
-                            <div class="form-group">
-                                <select required class="form-select">
-                                    <option value="" selected disabled>Ta'lim tilini tanlang</option>
-                                    <option value="0">O'zbek</option>
-                                    <option value="1">Rus</option>
-                                 </select>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group button">
-                                <button type="submit" class="btn ">Yuborish</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="col-lg-3">
+    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-responsive mt-5 mb-5">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Ismi</th>
+                            <th scope="col">Familiyasi</th>
+                            <th scope="col">Telefon raqami</th>
+                            <th scope="col">Viloyati</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <th scope="row">@counter</th>
+                                <td>@item.FirstName</td>
+                                <td>@item.LastName</td>
+                                <td>@item.Phone</td>
+                                <td>@((Regions)item.Region)</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
             </div>
         </div>
     </div>
@@ -263,7 +243,6 @@
 
     <!-- ========================= JS here ========================= -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
     <script src="assets/js/replain.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
@@ -273,10 +252,5 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/foo.js"></script>
     <script src="assets/js/masks.js"></script>
-    <script>
-        $(":input").inputmask();
-
-        $("#phone").inputmask({ "mask": "(99) 999 99 99" });
-    </script>
 </body>
 </html>
